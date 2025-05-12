@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 const ContactCard = () => {
   return (
-     <section className="py-20 bg-dark/5">
+     <section className="py-20 md:bg-dark/5">
           <div className="container mx-auto">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               <div className="grid md:grid-cols-2">

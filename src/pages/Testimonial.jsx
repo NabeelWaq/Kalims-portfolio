@@ -102,10 +102,10 @@ const Testimonials = () => {
           </div>
           
           {/* Featured Video Testimonial */}
-          <div className="max-w-5xl mx-auto bg-black/20 rounded-lg overflow-hidden aspect-video relative">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-8">
+          <div className="md:max-w-5xl w-[90%] h-[200px] mx-auto bg-black/20 rounded-lg overflow-hidden aspect-video relative">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end md:p-8">
               <button onClick={() => togglePlay(videoRef1)}
-              className="w-16 h-16 rounded-full bg-brand-gold text-dark flex items-center justify-center mb-6 absolute bottom-10 left-15 cursor-pointer z-20">
+              className="md:w-16 w-12 md:h-16 h-12 rounded-full bg-brand-gold text-dark flex items-center justify-center mb-6 absolute bottom-0 md:bottom-10 left-5 md:left-14 cursor-pointer z-20">
                 <Play size={32} className="ml-1" />
               </button>
               {/* <h3 className="text-2xl font-bold mb-2">Maria Rodriguez</h3>
@@ -117,7 +117,7 @@ const Testimonials = () => {
       </section>
       
       {/* Video Testimonial Slider */}
-      <section className="py-20">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-5xl text-dark font-serif">Video Testimonials</h2>
            <h4 className="text-lg md:text-xl mt-4 mb-8 text-dark">Watch these short videos to hear about real client experiences and results.</h4>
@@ -150,7 +150,7 @@ const Testimonials = () => {
       </section>
       
       {/* Why People Trust Section */}
-      <section className="py-20 bg-dark/30">
+      <section className="py-20 px-4 bg-dark/30">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-5xl text-center text-dark font-serif">Why People Trust Kalim</h2>
            <h4 className="text-lg md:text-xl mt-4 mb-8 text-center text-dark">My approach focuses on creating tangible results that impact both professional performance and personal fulfillment.</h4>
@@ -199,7 +199,7 @@ const Testimonials = () => {
       </section>
       
       {/* Written Testimonials */}
-      <section className="py-20">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-5xl text-center text-dark font-serif">Client Feedback</h2>
           
@@ -238,7 +238,9 @@ const Testimonials = () => {
       </section>
       
       {/* Contact Section */}
+      <div className="px-4">
       <ContactCard />
+      </div>
     </>
   );
 };

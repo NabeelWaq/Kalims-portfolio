@@ -23,7 +23,7 @@
 
 
 .active{
-    color: var(--color-dark);
+    color: var(--color-brand-gold);
     font-weight: 800;
 }
 .nav-links-con{

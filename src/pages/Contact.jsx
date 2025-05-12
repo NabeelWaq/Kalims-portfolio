@@ -5,7 +5,7 @@ const Contact = () => {
     
   return (
      <>
-     <main className="w-full min-h-screen relative px-4">
+     <main className="w-full min-h-screen relative px-4 mt-18 ">
     <section className="pt-28 pb-20">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto">

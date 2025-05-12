@@ -19,7 +19,7 @@ const videoRef = useRef(null);
         <>
             <main className="mt-14">
                 {/* Hero Section */}
-      <section className="pt-28 pb-20">
+      <section className="pt-28 pb-20 px-4">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             {/* 3D Style Image */}
@@ -32,7 +32,7 @@ const videoRef = useRef(null);
                     className="w-full object-cover h-[500px]"
                   />
                 </div>
-                <div className="absolute -top-3 -bottom-3 -left-3 -right-3 border-2 border-brand-gold rounded-lg -z-0"></div>
+                <div className="absolute -top-3 -bottom-3 -left-3 -right-3 md:border-2 border-brand-gold rounded-lg -z-0"></div>
               </div>
             </div>
             
@@ -65,7 +65,7 @@ const videoRef = useRef(null);
         </div>
       </section>
                 {/* Early Journey Section */}
-      <section className="py-20 bg-dark/10">
+      <section className="py-20 bg-dark/10 px-4">
         <div className="container mx-auto">
             <h2 className="text-3xl md:text-5xl text-left text-dark font-serif">My Journey Begin</h2>
         <h4 className="text-lg md:text-xl mt-4 mb-8 text-left text-dark">The experiences and challenges that shaped my approach to coaching and training.</h4>
@@ -93,7 +93,7 @@ const videoRef = useRef(null);
         </div>
       </section>
                   {/* Current Life Section */}
-      <section className="py-20">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
             <h2 className="text-3xl md:text-5xl text-left text-dark font-serif">Where I Stand Today</h2>
         <h4 className="text-lg md:text-xl mt-4 mb-8 text-left text-dark">My professional philosophy and commitment to my clients' success.</h4>
@@ -151,7 +151,7 @@ const videoRef = useRef(null);
           </div>
         </div>
       </section>
-                <section className="py-20 bg-dark text-white">
+                <section className="py-20 bg-dark text-white px-4">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Watch My Introduction</h2>
@@ -162,7 +162,7 @@ const videoRef = useRef(null);
           
           {/* Video Placeholder */}
           <div className="max-w-4xl mx-auto bg-black/20 rounded-lg overflow-hidden aspect-video relative">
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center ">
               <button onClick={togglePlay}
               className="w-16 h-16 rounded-full bg-brand-gold text-dark flex items-center justify-center mb-6 absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] cursor-pointer z-20">
                 <Play size={32} className="ml-1" />
@@ -174,8 +174,9 @@ const videoRef = useRef(null);
           </div>
         </div>
       </section>
+      <div className="px-4">
 <ContactCard/>
-
+</div>
             </main>
         </>
     )

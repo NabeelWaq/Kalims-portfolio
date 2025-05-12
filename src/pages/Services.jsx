@@ -70,7 +70,7 @@ const Services = () => {
 
     return (
         <>
-            <main>
+            <main className="px-4">
                {/* Hero Section */}
       <section className="pt-28 pb-20">
         <div className="container mx-auto">

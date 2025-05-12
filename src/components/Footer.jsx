@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone } from "lucide-reac
 const Footer = () => {
    const currentYear = new Date().getFullYear();
   return (
-       <footer className="bg-dark text-white pt-16 pb-8">
+       <footer className="bg-dark text-white pt-16 pb-8 px-4">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left - About */}
