@@ -1,0 +1,44 @@
+@font-face {
+    font-family: arms;
+    src: url('./Fonts/amsterdam-four.ttf');
+  }
+
+@import "tailwindcss";
+
+.mobileNav{
+    display: none;
+}
+.desktopNav{
+    display: flex;
+    /* box-shadow: var(--color-dark) 0px 0px 1px 0px inset, var(--color-dark) 0px 10px 100px -20px,var(--color-dark) 0px 10px 10px -30px; */
+}
+@media (max-width:700px) {
+    .mobileNav{
+        display: flex;
+    }
+    .desktopNav{
+        display: none;
+    }
+}
+
+
+.active{
+    color: var(--color-dark);
+    font-weight: 800;
+}
+.nav-links-con{
+ transition: .6s all ease-in ;
+}
+.navline{
+    transition: .5s all ease-in;
+}
+.navlink:hover .navline{
+    transform: translateX(100%);
+}
+
+@theme {
+  --color-dark : #1A2A42;
+  --color-light: #F8FAFC;
+  --color-hover: #90a955;
+  --color-brand-gold: #D4AF37;
+}
